@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sir Neil</title>
+    <link rel="icon" type="image/x-icon" href="images/sir-neil-logo-golden-transparent-cropped.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <section id="splash" class="display-flex">
+        <img src="images/sir-neil-logo-realgold-transp-cropped.png" alt="">
+        <h4><span class="auto-type2"></span></h4>
+    </section>
+
+    <section id="landing-page">
+        <div id="menu-section" class="transparent">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="market.html">Market</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="landing-section">
+            <div class="logo-section">
+                <img src="images/sir-neil-logo-realgold-transp-cropped.png" alt="">
+            </div>
+            <div class="text-section">
+                <h1>Get to <br class="show-in-sm hide-in-lg"> <span class="auto-type"></span> <br class="show-in-sm">all
+                    my upcoming <br class="hide-in-sm"> events</h1>
+                <h4>pick your favourite</h4>
+                <div class="button-div">
+                    <button onclick="window.location.href='market.html'">
+                        <span></span>
+                        <h6>See Events</h6>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="upcoming-events">
+
+        <h1>Upcoming events</h1>
+        <p>Book Now</p>
+
+        <div class="images-display">
+            <div class="gallery">
+                <a target="_blank" href="images/poster-1.png">
+                    <img src="images/poster-1.png" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">
+                    <p><strong>Date:</strong> 12th November</p>
+                    <p><strong>Venue:</strong> Hilton Hotel</p>
+                    <div class="buttons-div">
+                        <button class="to-s-event">More Info</button>
+                        <button class="to-paybox">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/poster2.png">
+                    <img src="images/poster2.png" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">
+                    <p><strong>Date:</strong> 12th November</p>
+                    <p><strong>Venue:</strong> Hilton Hotel</p>
+                    <div class="buttons-div">
+                        <button class="to-s-event">More Info</button>
+                        <button class="to-paybox">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/poster-1.png">
+                    <img src="images/poster-1.png" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">
+                    <p><strong>Date:</strong> 12th November</p>
+                    <p><strong>Venue:</strong> Hilton Hotel</p>
+                    <div class="buttons-div">
+                        <button class="to-s-event">More Info</button>
+                        <button class="to-paybox">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- The Modal -->
+    <section id="my-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Buy <span>Sir Neil's Album Launch</span> Ticket(s)</h3>
+            <div class="price-box-row">
+                <div class="price-box vvip">
+                    <h4>VVIP</h4>
+                    <h3>1000</h3>
+                    <p>KES</p>
+                    <div class="counter">
+                        <input type="number" value="1" id="">
+                    </div>
+                    <div class="one-subtotal">
+                        <p>1000</p>
+                    </div>
+                </div>
+
+                <div class="price-box vip">
+                    <h4>VIP</h4>
+                    <h3>800</h3>
+                    <p>KES</p>
+                    <div class="counter">
+                        <input type="number" value="0" id="">
+                    </div>
+                    <div class="one-subtotal">
+                        <p>0</p>
+                    </div>
+                </div>
+
+                <div class="price-box regular">
+                    <h4>REGULAR</h4>
+                    <h3>500</h3>
+                    <p>KES</p>
+                    <div class="counter">
+                        <input type="number" value="0" id="">
+                    </div>
+                    <div class="one-subtotal">
+                        <p>0</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tip row">
+                <h4>Tip: </h4>
+                <input type="number" value="200">
+            </div>
+            <div class="total row">
+                <h4>Total: </h4>
+                <p>1200</p>
+            </div>
+
+            <hr>
+
+
+            <div class="email row">
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+            </div>
+            <div class="row">
+                <label for="name"> Name:</label><br>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="credit-row">
+                <p>Credit/Debit Card:</p>
+                <input type="number">
+            </div>
+            <div class="row">
+                <button>MAKE PAYMENT</button>
+            </div>
+            <div class="credit-row">
+                <h3>Secured Payment Gateways:</h3>
+                <img src="images/pay.png" alt="">
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <footer class="section-p1">
+        <div class="col col-1">
+            <img src="images/sir-neil-logo-realgold-transp-cropped.png" alt="" class="logo">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> sirneil@gmail.com</p>
+            <p><strong>Phone:</strong> 0712345678</p>
+            <!-- <p><strong>Delivery Hours:</strong>10:00am - 6:00pm</p> -->
+            <div class="follow">
+
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i onclick="window.location.href='https://www.instagram.com/sir.neilofficial/'"
+                        class="fab fa-instagram"></i>
+                    <i onclick="window.location.href='https://www.youtube.com/results?search_query=sir+neil'"
+                        class="fab fa-youtube"></i>
+                    <i class="fab fa-spotify"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col col2">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <!-- <a href="contact.html">Delivery Information</a> -->
+            <a href="#">Terms and Conditions</a>
+            <a href="contact.html">Contact Us</a>
+
+            <div class="al-left">
+                <h4 class="ad">Advertise Your Event With Us</h4>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> +254712345678</p>
+                <p><i class="fa fa-whatsapp" aria-hidden="true"></i> +25487654321</p>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> sirneil@gmail.com</p>
+                <a href="contact.html">More contacts</a>
+            </div>
+
+
+        </div>
+
+        <div class="col col3">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">Create Account</a>
+            <a href="contact.html">Help</a>
+
+            <h4 class="ql">Quick Links</h4>
+            <a href="market.html">See events</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="index.html">Home</a>
+
+        </div>
+
+        <div class="col install">
+            <!-- <h4>Install App</h4>
+                <p>From App Store or Google Play </p>
+                <div class="row">
+                    <img src="img/pay/app.jpg" alt="">
+                    <img src="img/pay/play.jpg" alt="">
+                </div> -->
+            <h4>secured payment gateways:</h4>
+            <p>Pay via VISA card</p>
+            <img class="footer-pay-img" src="images/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p> Copyright &copy; Sir Neil
+                <script>document.write(new Date().getFullYear())</script>;
+            </p>
+            <p>All Rights Reserved</p>
+            <h4>Website by:</h4>
+            <p>Dearesy (Margret Mauno): <br> +254 790 500687</p>
+            <p>YosamSande Solutions (Yosam Sande): +254 704 710264 </p>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
