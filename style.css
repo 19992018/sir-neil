@@ -614,6 +614,7 @@ footer .copyright br{
     background-color: #fff;
     color: goldenrod;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 #buy-me-kahawa input {
@@ -825,45 +826,48 @@ footer .copyright br{
   
   /* Modal Content/Box */
   #my-modal .modal-content {
-    background-color: #fefefe;
+    /* background-color: #fefefe; */
+    background-color: #fff;
     /* margin: 15% auto;  */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
     height: 80%;
     overflow-y: auto;
-    border-top-left-radius: 25px;
+    /* border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-right-radius: 25px; */
   }
   #my-modal .modal-content::-webkit-scrollbar-track {
     /* border: 1px solid #000; */
+    /* background-color: #F6F4EB; */
     border: none;
     padding: 2px 0;
-    background-color: #F6F4EB;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+    background-color: #fff;
+    /* border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px; */
   }
   
   #my-modal .modal-content::-webkit-scrollbar {
     width: 20px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+    /* border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px; */
     
   }
   
   #my-modal .modal-content::-webkit-scrollbar-thumb {
     /* border-top-right-radius: 25px;
     border-bottom-right-radius: 25px; */
-    border-radius: 25px;
+    /* border-radius: 25px; */
     box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #016A70;
-    border: 1px solid #016A70;
+    background-color: #C63D2F;
+    border: 1px solid #C63D2F;
+    /* 016A70 */
   }
 
   #my-modal .modal-content h3 span{
-    color: #016A70;
+    color: #C63D2F;
   }
 
   #my-modal .modal-content .price-box-row {
@@ -878,10 +882,10 @@ footer .copyright br{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #016A70;
+    border: 1px solid #C63D2F;
     padding: 0.75rem 0 0 0;
     width: 26%;
-    background-color: #016A70;
+    background-color: #C63D2F;
     color: #fff;
   }
   #my-modal .modal-content .price-box-row .price-box h4{
@@ -897,7 +901,7 @@ footer .copyright br{
     border-left: none;
     border-right: none;
     border-top: none;
-    border-bottom: 1px solid #016A70;
+    border-bottom: 1px solid #C63D2F;
     padding: 0.3rem;
     width: 100%;
   }
@@ -929,15 +933,24 @@ footer .copyright br{
   }
   #my-modal .modal-content hr{
     margin: 1.5rem 10rem;
-    border-top: 3px dotted #016A70;
+    border-top: 3px dotted #C63D2F;
   }
   #my-modal .modal-content button{
     background-color: #fff;
     border: 1px solid #000;
-    color: #016A70;
+    color: #C63D2F;
     border-radius: 4px;
     padding: 0.5rem 0.75rem;
     cursor: pointer;
+  }
+  #my-modal .modal-content .phone-no{
+    margin-top: 0.5rem;
+  }
+  #my-modal .modal-content .phone-no p{
+    color: #C63D2F;
+  }
+  #my-modal .modal-content .credit-row h3{
+    text-align: center;
   }
   #my-modal .modal-content input{
     height: 2rem;
@@ -946,6 +959,7 @@ footer .copyright br{
     margin-top: 0.5rem;
     margin-bottom: 1rem;
   }
+  
   
   
   
@@ -1348,6 +1362,18 @@ footer .copyright br{
     #my-modal .modal-content .price-box-row .price-box .counter {
         width: 100%;
     }
+    
+    #my-modal .modal-content hr {
+        margin: 2rem;
+        
+    }
+
+    /* Single Event Page RESPONSIVE */
+    #s-event-landing .date {
+        font-size: 1.5rem;
+        color: red;
+    }
+
 
 }
 
