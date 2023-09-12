@@ -1229,6 +1229,11 @@ footer .copyright br{
         margin: 0 auto 3.5rem;
     }
 
+    #upcoming-events .gallery p {
+        text-wrap: nowrap;
+        font-size: 20px;
+    }
+
 
     footer {
         padding: 2.5rem 2rem;
