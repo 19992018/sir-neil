@@ -73,7 +73,8 @@ var typed = new Typed(".auto-type", {
 
 //To open single-event.html on clicking gallery div
 for (var i = 0, length = gallery.length; i < length; i++) {
-  gallery[i].onclick = function () {
+  gallery[i].onclick = function (event) {
+    event.preventDefault();
     location.href = "single-event.html";
   }
 }
