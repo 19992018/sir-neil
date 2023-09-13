@@ -410,6 +410,10 @@ footer .install .row img {
 footer .install img {
     margin: 10px 0 15px 0;
 }
+footer .mpesa{
+    width: 230px;
+    height: 42px;
+}
 
 footer .follow i:hover, a:hover {
     color: goldenrod;
@@ -418,6 +422,10 @@ footer .follow i:hover, a:hover {
 footer .copyright {
     width: 100%;
     text-align: center;
+}
+footer .copyright h4{
+    padding-top: 20px;
+    padding-bottom: 0;
 }
 
 footer .copyright br{
@@ -638,11 +646,18 @@ footer .copyright br{
 } */
 
 #buy-me-kahawa img {
-    margin: 1rem 0 1.5rem 0;
+    /* margin: 1rem 0 1.5rem 0; */
     cursor: pointer;
     border: 1px dotted goldenrod;
     width: 80%;
     height: auto;
+}
+
+#buy-me-kahawa .visa-img{
+    margin: 1rem 0 0.3rem 0;
+}
+#buy-me-kahawa .mpesa-img{
+    margin: 0.2rem 0 1.5rem 0;
 }
 
 #newsletter {
@@ -955,10 +970,23 @@ footer .copyright br{
   #my-modal .modal-content input{
     height: 2rem;
   }
-  #my-modal .modal-content .credit-row img{
+  /* #my-modal .modal-content .credit-row img{
     margin-top: 0.5rem;
     margin-bottom: 1rem;
+  } */
+  #my-modal .modal-content .credit-row .mpesa{
+    
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 220px;
+    height: 31px;
   }
+  #my-modal .modal-content .credit-row .visa-img{
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  
+  
   
   
   
@@ -1289,6 +1317,10 @@ footer .copyright br{
     footer .al-left h4{
         text-align: center;
     }
+    footer .al-left a{
+        text-wrap: nowrap;
+    }
+
     footer .al-left p{
         text-wrap: nowrap;
         text-align: center;
@@ -1307,7 +1339,11 @@ footer .copyright br{
 
     footer .install img {
         margin: 10px 0 15px 0;
-        
+     
+    }
+
+    footer .copyright p{
+        font-size: 10px;
     }
     
     footer .copyright h4{
