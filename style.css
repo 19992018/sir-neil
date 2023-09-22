@@ -388,6 +388,7 @@ footer .install{
     width: 25%;
 }
 
+
 footer .logo {
     margin-bottom: 30px;
     width: 80%;
@@ -965,15 +966,18 @@ footer .copyright br{
     border-bottom: 1px solid #C63D2F;
     padding: 0.3rem;
     width: 100%;
+    background-color: #fff;
   }
   #my-modal .modal-content .price-box-row .price-box .one-subtotal{
     width: 100%;
     background-color: #fff;
     color: #000;
+    display: flex;
   }
   #my-modal .modal-content .price-box-row .price-box .one-subtotal p{
     padding: 0.3rem;
     text-align: left;
+    font-size: 14px;
   }
   #my-modal .modal-content .row{
     display: flex;
@@ -1360,9 +1364,7 @@ footer .copyright br{
         text-align: center;
     }
 
-    footer a{
-        text-wrap: nowrap;
-    }
+    
 
     footer .al-left p{
         text-wrap: nowrap;
