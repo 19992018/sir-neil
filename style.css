@@ -23,7 +23,7 @@ html, body {
     color: #fff;
     height: 100vh;
     width: 100%;
-    z-index: 6;
+    z-index: 7;
     overflow-y: hidden;
 }
 
@@ -322,10 +322,31 @@ html, body {
     
 }
 
+/* WhatsApp Link */
+  
+#wa-section{
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 40px;
+    width: 140px;
+    z-index: 6
+}
+
+#wa-section .wa-image{
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+  /* Add some hover effects to image */
+  #wa-section .wa-image:hover {
+    opacity: 1;
+  }
 
 
 
-/*  */
+/* FOOTER */
 
 
 footer {
@@ -445,6 +466,8 @@ footer .copyright h4{
 footer .copyright br{
     display: none;
 }
+
+
 
 /* /////////////////////////////MARKET PAGE //////////////////////////// */
 #landing-page.mkt-landing {
@@ -646,6 +669,10 @@ footer .copyright br{
     border: 2px solid #000;
 }
 
+#buy-me-kahawa .support{
+    color: green;
+}
+
 /* #buy-me-kahawa div{
     margin: 0.5rem 0 1.5rem 0;
     cursor: pointer;
@@ -659,22 +686,22 @@ footer .copyright br{
     
 } */
 
-#buy-me-kahawa img {
-    /* margin: 1rem 0 1.5rem 0; */
+/* #buy-me-kahawa img {
+   
     cursor: pointer;
-    /* border: 1px dotted goldenrod; */
+    
     width: 80%;
     height: auto;
 }
 
 #buy-me-kahawa .mpesa-img{
     margin: 1rem 0 0.3rem 0;
-    /* border: 1px dotted greenyellow; */
+    
 }
 #buy-me-kahawa .visa-img{
     margin: 0.2rem 0 1.5rem 0;
-    /* border: 1px dotted greenyellow; */
-}
+   
+} */
 
 #newsletter {
     display: flex;
@@ -928,7 +955,10 @@ footer .copyright br{
   #my-modal .modal-content .price-box-row .price-box p{
     padding: 0.2rem 0 1.8rem 0;
   }
-  #my-modal .modal-content .price-box-row .price-box .counter input{
+  #my-modal .modal-content .price-box-row .price-box .counter{
+    width: 100%;
+  }
+  #my-modal .modal-content .price-box-row .price-box .counter select{
     border-left: none;
     border-right: none;
     border-top: none;
@@ -1002,11 +1032,6 @@ footer .copyright br{
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  
-  
-  
-  
-  
   
   
   /* The Close Button */

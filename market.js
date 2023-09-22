@@ -4,6 +4,19 @@ const btn = document.getElementsByClassName("to-s-event");
 const btn2 = document.getElementsByClassName("to-paybox");
 const span = document.getElementsByClassName("close")[0];
 const gallery = document.querySelectorAll(".gallery img");
+const tktPrice1 = document.querySelector(".vvip h3");
+const tktPrice2 = document.querySelector(".vip h3");
+const tktPrice3 = document.querySelector(".regular h3");
+const subtotal1 = document.querySelector("#one-subtotal-1 p");
+const subtotal2 = document.querySelector("#one-subtotal-2 p");
+const subtotal3 = document.querySelector("#one-subtotal-3 p");
+const tktNo1 = document.querySelector("#ticket-no-1");
+const tktNo2 = document.querySelector("#ticket-no-2");
+const tktNo3 = document.querySelector("#ticket-no-3");
+// const noChosen = document.querySelectorAll("#ticket-no option");
+const totalAmount = document.querySelector(".total p");
+const detectChange = document.querySelectorAll(".detect-change");
+const tip = document.querySelector(".tip input");
 
 
 //To make the y scroll appear
@@ -83,6 +96,61 @@ window.onclick = function (event) {
   }
 }
 
+//The Ticket pricing within the modal:
+function totalCalculator(){
+  const subtotal1Int = (parseInt(subtotal1.innerHTML, 10) || 0);
+  const subtotal2Int = parseInt(subtotal2.innerHTML, 10);
+  const subtotal3Int = parseInt(subtotal3.innerHTML, 10);
+  const tipValue = tip.value;
+  const tipInt = (parseInt(tipValue, 10) || 0);
+  const total = subtotal1Int + subtotal2Int + subtotal3Int + tipInt;
+  totalAmount.textContent = total;
+}
+// for (let i = 0; i < noChosen.length; i++) {
+tktNo1.onchange =function() {
+  const tktPriceInt= parseInt(tktPrice1.innerText, 10);
+  const tktNoValue = tktNo1.value;
+  const noOfTkts =parseInt(tktNoValue, 10);
+  const subtotalBox1 = tktPriceInt * noOfTkts;
+  subtotal1.innerHTML = subtotalBox1;
+  totalCalculator();
+}
+
+tktNo2.onchange =function() {
+  const tktPriceInt= parseInt(tktPrice2.innerText, 10);
+  const tktNoValue = tktNo2.value;
+  const noOfTkts =parseInt(tktNoValue, 10);
+  const subtotalBox2 = tktPriceInt * noOfTkts;
+  subtotal2.innerHTML = subtotalBox2;
+  totalCalculator();
+}
+
+tktNo3.onchange =function() {
+  const tktPriceInt= parseInt(tktPrice3.innerText, 10);
+  const tktNoValue = tktNo3.value;
+  const noOfTkts =parseInt(tktNoValue, 10);
+  const subtotalBox3 = tktPriceInt * noOfTkts;
+  subtotal3.innerHTML = subtotalBox3;
+  totalCalculator();
+}
+
+
+
+// function totalCalculator(){
+//   const total = subtotal1.innerHTML + subtotal2.innerHTML + subtotal3.innerHTML;
+//   totalAmount.innerHTML = total;
+// }
+// for (let i = 0; i < detectChange.length; i++) {
+ 
+
+
+
+
+
+// }
+
+
+
 
 // for all some page buttons to lead to single-event page.
 for (let i = 0; i < btn.length; i++) {
@@ -90,3 +158,4 @@ for (let i = 0; i < btn.length; i++) {
     location.href = "single-event.html";
   }
 }
+
