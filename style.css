@@ -1053,6 +1053,26 @@ footer .copyright br{
     cursor: pointer;
   }
 
+/* /////////////////////Terms and Conditions Page///////////// */
+#tsandcs{
+    padding: 2rem 5rem;
+}
+#tsandcs h2{
+    font-size: 2rem;
+    color: goldenrod;
+    padding-top: 1rem;
+}
+#tsandcs p{
+    color: #000;
+    padding: 1rem 0;
+    text-align: justify;
+}
+#tsandcs ul{
+    padding: 1rem 3rem;
+    text-align: justify;
+}
+
+
 
 
 
@@ -1455,6 +1475,10 @@ footer .copyright br{
         color: red;
     }
 
+    /* tsandcs page RESPONSIVE */
+    #tsandcs {
+        padding: 0.5rem 2rem;
+    }
 
 }
 
