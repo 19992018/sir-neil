@@ -1054,6 +1054,21 @@ footer .copyright br{
   }
 
 /* /////////////////////Terms and Conditions Page///////////// */
+#landing-page.tsandcs-landing {
+    background-image: url(images/law.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#landing-page.tsandcs-landing #banner {
+    text-align: center;
+}
+
+#landing-page.tsandcs-landing #banner h1 {
+    padding: 8rem 2rem 5rem 2rem;
+    color: #fff;
+    font-size: 2rem;
+}
 #tsandcs{
     padding: 2rem 5rem;
 }
