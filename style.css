@@ -1478,6 +1478,11 @@ footer .copyright br{
     #my-modal .modal-content .price-box-row .price-box .counter {
         width: 100%;
     }
+
+    #my-modal .modal-content input {
+    
+        width: 40%;
+    }
     
     #my-modal .modal-content hr {
         margin: 2rem;
