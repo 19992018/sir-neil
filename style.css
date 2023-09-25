@@ -1479,7 +1479,7 @@ footer .copyright br{
         width: 100%;
     }
 
-    #my-modal .modal-content input {
+    #my-modal .modal-content input.detect-change {
         width: 30%;
     }
     
