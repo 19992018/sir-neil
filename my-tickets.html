@@ -7,18 +7,14 @@
     <title>Sir Neil</title>
     <link rel="icon" type="image/x-icon" href="images/sir-neil-logo-golden-transparent-cropped.png">
     <link rel="stylesheet" href="style.css">
-    <!-- font awesome -->
+    <!-- Changed 6.4.0 to 6.4.2 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 
 <body>
-
-    <!-- The splash screen will not appear on this page -->
-    <!-- <section id="splash-none" class="display-flex">
-        <img src="images/sample-logo.jpg" alt="">
-        <h4><span class="auto-type2"></span></h4>
-    </section> -->
 
     <section id="landing-page" class="mkt-landing background-tint">
         <div id="menu-section" class="transparent">
@@ -26,75 +22,134 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="market.html">Market</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="my-tickets.html">My Tickets</a></li>
+                <li class="active"><a href="my-tickets.html">My Tickets</a></li>
+
             </ul>
             <a href="javascript:void(0);" class="icon">
-                <i class="fa fa-bars"></i>
+                <i class="menuIcon fa fa-bars"></i>
+                <!-- <i class="closeIcon fa-x"></i> -->
               </a>
         </div>
         <div id="banner">
-            <h1>Sir Neil's Album Launch</h1>
+            <h1>Check out here</h1>
         </div>
     </section>
 
-    <section id="s-event-landing">
-        <div class="event-details">
-            <div class="single-detail date">
-                <i class="fa fa-calendar" aria-hidden="true"></i>
-                <h4> Date: </h4>
-                <h4>12th December 2023</h4>
-            </div>
-            <div class="single-detail other">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <h4>Venue: </h4>
-                <p>Hilton Hotel</p>
-            </div>
-            <div class="single-detail other">
-                <i class="fa fa-clock-o" aria-hidden="true"></i>
-                <h4>Time: </h4>
-                <p>5pm till late</p>
-            </div>
-            <div class="single-detail other">
-                <i class="fa fa-certificate" aria-hidden="true"></i>
-                <h4>Host: </h4>
-                <p>Sir Neil</p>
-            </div>
-            <div class="single-detail other last">
-                <i class="fa-solid fa-coins"></i>
-                <h4>Ticket-Price (KES): </h4>
-                <p>1000</p>
-            </div>
+    <!-- Table -->
+    <section id="cart" class="section-p1">
+        <!-- <table width="100%"> -->
+            <div class="table-scroll">
+            <table>
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></i></td>
+                    <td><img src="images/poster-1.png" alt=""></td>
+                    <td>Sample ticket 1</td>
+                    <td>Ksh. 1000</td>
+                    <td><input type="number" value="1"></td>
+                    <td>Ksh. 1000</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></i></td>
+                    <td><img src="images/poster2.png" alt=""></td>
+                    <td>Sample ticket 2</td>
+                    <td>Ksh. 1500</td>
+                    <td><input type="number" value="1"></td>
+                    <td>Ksh. 1500</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></i></td>
+                    <td><img src="images/poster-1.png" alt=""></td>
+                    <td>Sample ticket 3</td>
+                    <td>Ksh. 1500</td>
+                    <td><input type="number" value="1"></td>
+                    <td>Ksh. 1500</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></i></td>
+                    <td><img src="images/poster2.png" alt=""></td>
+                    <td>Sample ticket 4</td>
+                    <td>Ksh. 1500</td>
+                    <td><input type="number" value="1"></td>
+                    <td>Ksh. 1500</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-            <!-- <div class="single-detail other prices">
-                
-                
-                <p>VVIP: 1000KES;</p>
-                <p>VIP: 800KES;</p>
-                <p>Regular: 500KES;</p>
-                
+        <div class="table-total">
+            <h1>Total (KES):</h1> <h1>5500</h1>
+        </div>
+    </section>
 
-            </div> -->
+    <section id="payments-section">
+        <div id="cards-card">
+            <h3>Pay via card</h3>
+            <div class="lab-inp">
+                <label for="name">Name on Card</label><br>
+                <input type="text" id="name"><br>
+            </div>
+            <div class="lab-inp">
+                <label for="card-number">Card Number</label><br>
+                <input type="number" id="card-number"><br>
+            </div>
             
-            <div class="event-description">
-                <h1>Event description</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque deleniti inventore quas doloribus
-                    minus? Quisquam eius cum quam autem libero cumque inventore officia esse, atque exercitationem illum
-                    ducimus est odio saepe provident consectetur voluptas tempora assumenda, non perferendis aut
-                    eligendi nesciunt facere. Vitae facilis odit deleniti quas, eligendi similique adipisci.</p>
+            <div class="exp-cvv lab-inp">
+                <div class="exp">
+                    <label for="exp-date">Expiration Date</label><br>
+                    <input type="date" id="exp-date">
+                </div>
+                <div class="cvv">
+                    <label for="cvv">CVV</label><br>
+                    <input type="number" id="cvv">
+                </div>
             </div>
-            <div class="button-div">
-                <button class="to-paybox">BUY TICKET</button>
+
+            <hr>
+
+            <div class="figures">
+                <h4>Total</h4>
+                <p>KES 5500</p>
             </div>
 
+            <div class="button-div figures">
+                <h4>KES 5500</h4>
+                <div class="row-align">
+                    <p>Checkout</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                
+            </div>
         </div>
-
-        <div class="poster-div">
-            <img src="images/poster-1.png" alt="">
+        <div id="mpesa-card">
+            <h3>Pay via MPesa</h3>
+        <ul>
+            <li>Confirm payment phone number then click <span>'Proceed'</span> to generate payment request to phone.</li>
+            <li>Enter your <span>MPESA PIN</span> on prompt pop-up on your phone to complete the payment.</li>
+            <div >
+             <input type="tel"><br>
+             <button>Proceed</button>
+            </div>
+            
+        </ul>
         </div>
+        
 
-
+        
+        
 
     </section>
+    
 
     <!-- The Modal -->
     <section id="my-modal" class="modal">
@@ -108,7 +163,6 @@
                     <h4>Regular</h4>
                     <h3>1000</h3>
                     <p>KES</p>
-                    
                     <!-- <div class="counter">
                         <input type="number" value="1" id="">
                     </div> -->
@@ -127,8 +181,9 @@
                             <option value="10">10 tickets</option>
                         </select>
                     </div>
-                    <div class="one-subtotal" id="one-subtotal-1" >
-                        <p>1000</p> <p> KES</p>
+                    <div class="one-subtotal" id="one-subtotal-1">
+                        <p>1000</p>
+                        <p> KES</p>
                     </div>
                 </div>
 
@@ -157,7 +212,6 @@
                     </div>
                 </div> -->
 
-            
                 <!-- <div class="price-box regular">
                     <h4>REGULAR</h4>
                     <h3>500</h3>
@@ -187,7 +241,7 @@
 
             <div class="tip row">
                 <h4>Tip: </h4>
-                <input  class="detect-change" type="number" value="0">
+                <input class="detect-change" type="number" value="0">
                 <button onclick="totalCalculator()">Give Tip</button>
             </div>
             <div class="total row">
@@ -251,7 +305,7 @@
                         class="fab fa-instagram"></i>
                     <i onclick="window.location.href='https://open.spotify.com/artist/1l6ZSvzPBMpwf9l12rL2ww?si=4wAMZ2pIQQqUCxhNXCBZPg'"
                         class="fab fa-spotify"></i>
-                        <br>
+                    <br>
                     <i onclick="window.location.href='https://www.facebook.com/profile.php?id=100069335473854&mibextid=avESrC'"
                         class="fa fa-facebook-official"></i>
                     <i onclick="window.location.href='https://twitter.com/neilsamuel271'"
@@ -303,6 +357,7 @@
             <p>Pay via MPesa & VISA</p>
             <img class="footer-pay-img mpesa" src="images/mpesa-cropped.png" alt="">
             <img class="footer-pay-img" src="images/pay.png" alt="">
+
         </div>
 
         <div class="copyright">
@@ -317,11 +372,12 @@
 
     </footer>
 
-    <!-- JQuery Link -->
     <script src="https://code.jquery.com/jquery-3.6.4.js"
         integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script src="market.js"></script>
+    
+  </body>
 </body>
 
 </html>

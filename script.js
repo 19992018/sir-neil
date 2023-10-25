@@ -21,7 +21,7 @@ const detectChange = document.querySelectorAll(".detect-change");
 const tip = document.querySelector(".tip input");
 
 
-//To make the top menu bar turn black omn scroll
+//To make the top menu bar turn black on scroll
 document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
     var scroll = window.scrollTop || document.documentElement.scrollTop;
@@ -48,31 +48,57 @@ var typed = new Typed(".auto-type2", {
 ///////////////////////////SPLASH SCREEN CODE
 // The splash screen displays when the page loads:
 
-document.addEventListener('DOMContentLoaded', (e) => {
-  //To display the first page after 4 seconds:
-    const myTimeout = setTimeout(() => {
-      splash.classList.add('display-none');
-      splash.classList.remove('display-flex');
-      body.style.overflow = "auto";
-  }, 4000);
+//splash screen should appear
+//splash screen disappears after 4 seconds
+//the rest of the content on the page appears/displays
 
-  if (sessionStorage.getItem('landing-page') !== 'true') {
-    myTimeout;
-    sessionStorage.setItem('landing-page', 'true');
-    
-  } 
-  // else {
-  //   //This ELSE-STATEMENT is supposed to display the home page immediately if session storage contains 'landing-page'
-  //   //Instead, the splash screen flashes before the first page appears
-  //   // How do I remove this flashing?
-  //   //NOTE: Comment out this else statement of you want to see the splash screen for four seconds
-  //   splash.classList.add('display-none');
-  //   splash.classList.remove('display-flex');
-  //   body.style.overflow = "auto";
-    
-  // }
-  
+//splash screen is displayed once per user session
+
+//splash element gets displayed on first load
+//timeout function to show rest of content (remove splash) after 4 seconds
+
+//if  user session is not detected, splash screen shows
+//else if it is detected, splash screen is not shown
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (sessionStorage.getItem("isFirstVisit") !== "true") {
+
+    splash.classList.remove("display-none");
+    splash.classList.add("display-flex");
+    setTimeout(hideSplashScreen, 4000);
+
+    sessionStorage.setItem("isFirstVisit", "true");
+
+  } else{
+    body.style.overflowY = "auto";
+  }
+
 });
+
+function hideSplashScreen() {
+  splash.classList.remove("display-flex");
+  splash.classList.add("display-none");
+  body.style.overflowY = "auto";
+}
+
+//class swap functionality into a function
+//function: removes a class and adds a class. 
+
+// Hambuger menu
+const hamburger = document.querySelector("#landing-page #menu-section a.icon");
+const navMenu = document.querySelector("#landing-page #menu-section");
+
+
+hamburger.addEventListener("click", () => {
+  // hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll("#landing-page #menu-section ul li").forEach(n => n.addEventListener("click", () => {
+  // hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))
+
 
 
 //Autotype on landing page
@@ -116,26 +142,26 @@ window.onclick = function (event) {
 }
 
 //The Ticket pricing within the modal:
-function totalCalculator(){
+function totalCalculator() {
   const subtotal1Int = (parseInt(subtotal1.innerHTML, 10) || 0);
   // const subtotal2Int = parseInt(subtotal2.innerHTML, 10);
   // const subtotal3Int = parseInt(subtotal3.innerHTML, 10);
   const tipValue = tip.value;
   const tipInt = (parseInt(tipValue, 10) || 0);
 
-  if (tipInt >= 0){
+  if (tipInt >= 0) {
     const total = subtotal1Int + tipInt;
     totalAmount.textContent = total;
-  }else {
+  } else {
     alert(tipInt + " is not a valid tip amount. Please enter a value that is 0 or greater than 0")
   }
-     
+
 }
 // for (let i = 0; i < noChosen.length; i++) {
-tktNo1.onchange =function() {
-  const tktPriceInt= parseInt(tktPrice1.innerText, 10);
+tktNo1.onchange = function () {
+  const tktPriceInt = parseInt(tktPrice1.innerText, 10);
   const tktNoValue = tktNo1.value;
-  const noOfTkts =parseInt(tktNoValue, 10);
+  const noOfTkts = parseInt(tktNoValue, 10);
   const subtotalBox1 = tktPriceInt * noOfTkts;
   subtotal1.innerHTML = subtotalBox1;
   totalCalculator();

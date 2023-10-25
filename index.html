@@ -15,7 +15,9 @@
 
 <body>
 
-    <section id="splash" class="display-flex">
+    <!-- <section id="splash" class="display-flex"> -->
+    <section id="splash" class="display-none">
+
         <img src="images/sir-neil-logo-realgold-transp-cropped.png" alt="">
         <h4><span class="auto-type2"></span></h4>
     </section>
@@ -26,7 +28,12 @@
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="market.html">Market</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="my-tickets.html">My Tickets</a></li>
             </ul>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars"></i>
+
+            </a>
         </div>
 
         <div id="landing-section">
@@ -129,8 +136,9 @@
                             <option value="10">10 tickets</option>
                         </select>
                     </div>
-                    <div class="one-subtotal" id="one-subtotal-1" >
-                        <p>1000</p> <p> KES</p>
+                    <div class="one-subtotal" id="one-subtotal-1">
+                        <p>1000</p>
+                        <p> KES</p>
                     </div>
                 </div>
 
@@ -188,7 +196,7 @@
 
             <div class="tip row">
                 <h4>Tip: </h4>
-                <input  class="detect-change" type="number" value="0">
+                <input class="detect-change" type="number" value="0">
                 <button onclick="totalCalculator()">Give Tip</button>
             </div>
             <div class="total row">
@@ -252,7 +260,7 @@
                         class="fab fa-instagram"></i>
                     <i onclick="window.location.href='https://open.spotify.com/artist/1l6ZSvzPBMpwf9l12rL2ww?si=4wAMZ2pIQQqUCxhNXCBZPg'"
                         class="fab fa-spotify"></i>
-                        <br>
+                    <br>
                     <i onclick="window.location.href='https://www.facebook.com/profile.php?id=100069335473854&mibextid=avESrC'"
                         class="fa fa-facebook-official"></i>
                     <i onclick="window.location.href='https://twitter.com/neilsamuel271'"
@@ -318,7 +326,7 @@
         </div>
 
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.6.4.js"
         integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>

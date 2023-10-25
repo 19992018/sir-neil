@@ -48,6 +48,7 @@ html, body {
     padding: 1rem;
 
 }
+
 /* section:not(#splash){
     display: none;
 } */
@@ -85,11 +86,10 @@ html, body {
 
 #landing-page #menu-section ul {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-
-
 
 #landing-page #menu-section ul li {
     list-style: none;
@@ -120,7 +120,14 @@ html, body {
     width: 100%;
 }
 
-
+/* Hamburger menu */
+#landing-page #menu-section a.icon {
+    display: none;
+    color: #fff;
+    top: 10px;
+    right: 10px;
+    font-size: 3rem;
+}
 
 #landing-page #landing-section {
     padding: 7rem 5rem;
@@ -294,14 +301,16 @@ html, body {
     padding: 15px;
     text-align: center;
 }
-#upcoming-events .buttons-div{
+
+#upcoming-events .buttons-div {
     display: flex;
-    
+
     align-items: center;
     justify-content: center;
     gap: 0.3rem;
 }
-#upcoming-events .to-s-event{
+
+#upcoming-events .to-s-event {
     background-color: #fff;
     color: #000;
     padding: 0.5rem 0.25rem;
@@ -310,7 +319,8 @@ html, body {
     cursor: pointer;
     width: 40%;
 }
-#upcoming-events .to-paybox{
+
+#upcoming-events .to-paybox {
     background-color: #fff;
     color: #000;
     padding: 0.5rem 0.25rem;
@@ -319,12 +329,12 @@ html, body {
     cursor: pointer;
     width: 40%;
     z-index: 2;
-    
+
 }
 
 /* WhatsApp Link */
-  
-#wa-section{
+
+#wa-section {
     cursor: pointer;
     position: fixed;
     bottom: 23px;
@@ -333,16 +343,16 @@ html, body {
     z-index: 6
 }
 
-#wa-section .wa-image{
+#wa-section .wa-image {
     width: 100%;
     height: auto;
     opacity: 0.8;
 }
 
-  /* Add some hover effects to image */
-  #wa-section .wa-image:hover {
+/* Add some hover effects to image */
+#wa-section .wa-image:hover {
     opacity: 1;
-  }
+}
 
 
 
@@ -374,17 +384,19 @@ footer .col-1 {
     /* padding-right: 1.5rem; */
 }
 
-footer .icon{
+footer .icon {
     line-height: 2;
 }
-footer .col2{
+
+footer .col2 {
     width: 25%;
 }
-footer .col3{
+
+footer .col3 {
     width: 15%;
 }
 
-footer .install{
+footer .install {
     width: 25%;
 }
 
@@ -393,7 +405,7 @@ footer .logo {
     margin-bottom: 30px;
     width: 80%;
     height: auto;
-    
+
 }
 
 footer h4 {
@@ -401,12 +413,12 @@ footer h4 {
     padding-bottom: 20px;
 }
 
-footer .col2 .ad{
+footer .col2 .ad {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-footer .col3 .ql{
+footer .col3 .ql {
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -446,7 +458,8 @@ footer .install .row img {
 footer .install img {
     margin: 10px 0 15px 0;
 }
-footer .mpesa{
+
+footer .mpesa {
     width: 230px;
     height: 42px;
 }
@@ -459,12 +472,13 @@ footer .copyright {
     width: 100%;
     text-align: center;
 }
-footer .copyright h4{
+
+footer .copyright h4 {
     padding-top: 20px;
     padding-bottom: 0;
 }
 
-footer .copyright br{
+footer .copyright br {
     display: none;
 }
 
@@ -494,36 +508,39 @@ footer .copyright br{
     font-size: 2rem;
 }
 
-#short-title{
+#short-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 2rem;
 }
-#short-title h1{
+
+#short-title h1 {
     font-size: 1.75rem;
 }
 
 /* Event filter section */
- .event-filter{
+.event-filter {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 1.5rem;
     margin-top: 2rem !important;
-  }
-  .filter-item{
+}
+
+.filter-item {
     font-size: 0.9rem;
     font-weight: 500;
     cursor: pointer;
-  }
-  .active-filter{
+}
+
+.active-filter {
     background: #000;
     color: #fff;
     padding: 4px 10px;
     border-radius: 4px;
-  }
+}
 
 
 /* /////////////////////////////////CONTACT PAGE///////////////////////// */
@@ -670,7 +687,7 @@ footer .copyright br{
     border: 2px solid #000;
 }
 
-#buy-me-kahawa .support{
+#buy-me-kahawa .support {
     color: green;
 }
 
@@ -783,44 +800,48 @@ footer .copyright br{
     border: 1px solid #000;
   } */
 
-  
-  #s-event-landing{
+
+#s-event-landing {
     display: flex;
     gap: 2rem;
     margin-top: 1rem;
     padding: 2.5rem;
-  }
+}
 
-  #s-event-landing .event-details{
-    width:48%;
+#s-event-landing .event-details {
+    width: 48%;
     padding: 1rem;
     border: 1px solid #000;
 }
 
-  #s-event-landing .event-details .single-detail{
+#s-event-landing .event-details .single-detail {
     display: flex;
     text-align: left;
     justify-content: flex-start;
     gap: 0.5rem;
     padding: 0.5rem;
-    
-  }
-  #s-event-landing .date{
+
+}
+
+#s-event-landing .date {
     font-size: 1.75rem;
     color: red;
-  }
-  #s-event-landing .other{
-    font-size: 1rem; 
-  }
-  #s-event-landing .other.last{
+}
+
+#s-event-landing .other {
+    font-size: 1rem;
+}
+
+#s-event-landing .other.last {
     display: flex;
     text-align: left;
     justify-content: flex-start;
     gap: 0.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.1rem;
-  }
-  #s-event-landing .other.prices{
+}
+
+#s-event-landing .other.prices {
     font-size: 0.75rem;
     color: green;
     display: flex;
@@ -829,23 +850,24 @@ footer .copyright br{
     gap: 0.5rem;
     padding: 0.1rem;
     margin-bottom: 0.5rem;
-  }
-  
+}
 
-  #s-event-landing .event-description{
+
+#s-event-landing .event-description {
     padding: 0.75rem 0;
     text-align: justify;
     text-justify: inter-word;
-  }
-  #s-event-landing .event-details .button-div{
-    padding: 1rem ;
+}
+
+#s-event-landing .event-details .button-div {
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-  }
 
-  #s-event-landing .event-details .button-div button{
+}
+
+#s-event-landing .event-details .button-div button {
     background-color: #fff;
     color: #000;
     padding: 0.75rem;
@@ -853,52 +875,61 @@ footer .copyright br{
     border-radius: 4px;
     width: 65%;
     cursor: pointer;
-  }
+}
 
-  #s-event-landing .poster-div{
+#s-event-landing .poster-div {
     width: 48%;
     padding: 1rem;
     border: 1px solid #000;
-  }
+}
 
-  #s-event-landing .poster-div img{
+#s-event-landing .poster-div img {
     width: 100%;
     height: 100%;
-    
-  }
 
-  /* Modal */
+}
+
+/* Modal */
 /* The Modal (background) */
 #my-modal.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 4; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 4;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
     /* overflow: auto; */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 
-  }
-  
-  /* Modal Content/Box */
-  #my-modal .modal-content {
+}
+
+/* Modal Content/Box */
+#my-modal .modal-content {
     /* background-color: #fefefe; */
     background-color: #fff;
     /* margin: 15% auto;  */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
+    /* Could be more or less, depending on screen size */
     height: 80%;
     overflow-y: auto;
     /* border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px; */
-  }
-  #my-modal .modal-content::-webkit-scrollbar-track {
+}
+
+#my-modal .modal-content::-webkit-scrollbar-track {
     /* border: 1px solid #000; */
     /* background-color: #F6F4EB; */
     border: none;
@@ -906,38 +937,39 @@ footer .copyright br{
     background-color: #fff;
     /* border-top-right-radius: 25px;
     border-bottom-right-radius: 25px; */
-  }
-  
-  #my-modal .modal-content::-webkit-scrollbar {
+}
+
+#my-modal .modal-content::-webkit-scrollbar {
     width: 20px;
     /* border-top-right-radius: 25px;
     border-bottom-right-radius: 25px; */
-    
-  }
-  
-  #my-modal .modal-content::-webkit-scrollbar-thumb {
+
+}
+
+#my-modal .modal-content::-webkit-scrollbar-thumb {
     /* border-top-right-radius: 25px;
     border-bottom-right-radius: 25px; */
     /* border-radius: 25px; */
-    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #C63D2F;
     border: 1px solid #C63D2F;
     /* 016A70 */
-  }
+}
 
-  #my-modal .modal-content h3 span{
+#my-modal .modal-content h3 span {
     color: #C63D2F;
-  }
+}
 
-  #my-modal .modal-content .price-box-row {
+#my-modal .modal-content .price-box-row {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
     padding: 1.5rem;
     margin-top: 1rem;
-  }
-  #my-modal .modal-content .price-box-row .price-box{
+}
+
+#my-modal .modal-content .price-box-row .price-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -946,20 +978,25 @@ footer .copyright br{
     width: 26%;
     background-color: #C63D2F;
     color: #fff;
-  }
-  #my-modal .modal-content .price-box-row .price-box h4{
-    padding: 1.8rem 0 0.5rem 0 ;
-  }
-  #my-modal .modal-content .price-box-row .price-box h3{
+}
+
+#my-modal .modal-content .price-box-row .price-box h4 {
+    padding: 1.8rem 0 0.5rem 0;
+}
+
+#my-modal .modal-content .price-box-row .price-box h3 {
     padding: 0.5rem;
-  }
-  #my-modal .modal-content .price-box-row .price-box p{
+}
+
+#my-modal .modal-content .price-box-row .price-box p {
     padding: 0.2rem 0 1.8rem 0;
-  }
-  #my-modal .modal-content .price-box-row .price-box .counter{
+}
+
+#my-modal .modal-content .price-box-row .price-box .counter {
     width: 100%;
-  }
-  #my-modal .modal-content .price-box-row .price-box .counter select{
+}
+
+#my-modal .modal-content .price-box-row .price-box .counter select {
     border-left: none;
     border-right: none;
     border-top: none;
@@ -967,28 +1004,33 @@ footer .copyright br{
     padding: 0.3rem;
     width: 100%;
     background-color: #fff;
-    outline: none;;
-  }
-  #my-modal .modal-content .price-box-row .price-box .one-subtotal{
+    outline: none;
+    ;
+}
+
+#my-modal .modal-content .price-box-row .price-box .one-subtotal {
     width: 100%;
     background-color: #fff;
     color: #000;
     display: flex;
-  }
-  #my-modal .modal-content .price-box-row .price-box .one-subtotal p{
+}
+
+#my-modal .modal-content .price-box-row .price-box .one-subtotal p {
     padding: 0.3rem;
     text-align: left;
     font-size: 14px;
-  }
-  #my-modal .modal-content .row{
+}
+
+#my-modal .modal-content .row {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.5rem 1.5rem;
     width: 100%;
     gap: 0.5rem;
-  }
-  #my-modal .modal-content .credit-row{
+}
+
+#my-modal .modal-content .credit-row {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -996,63 +1038,71 @@ footer .copyright br{
     padding: 0.8rem 1.5rem;
     width: 100%;
     gap: 0.3rem;
-  }
-  #my-modal .modal-content hr{
+}
+
+#my-modal .modal-content hr {
     margin: 1.5rem 10rem;
     border-top: 3px dotted #C63D2F;
-  }
-  #my-modal .modal-content button{
+}
+
+#my-modal .modal-content button {
     background-color: #fff;
     border: 1px solid #000;
     color: #C63D2F;
     border-radius: 4px;
     padding: 0.5rem 0.75rem;
     cursor: pointer;
-  }
-  #my-modal .modal-content .phone-no{
+}
+
+#my-modal .modal-content .phone-no {
     margin-top: 0.5rem;
-  }
-  #my-modal .modal-content .phone-no p{
+}
+
+#my-modal .modal-content .phone-no p {
     color: #C63D2F;
-  }
-  #my-modal .modal-content .credit-row h3{
+}
+
+#my-modal .modal-content .credit-row h3 {
     text-align: center;
-  }
-  #my-modal .modal-content input{
+}
+
+#my-modal .modal-content input {
     height: 2rem;
-  }
-  /* #my-modal .modal-content .credit-row img{
+}
+
+/* #my-modal .modal-content .credit-row img{
     margin-top: 0.5rem;
     margin-bottom: 1rem;
   } */
-  #my-modal .modal-content .credit-row .mpesa{
-    
+#my-modal .modal-content .credit-row .mpesa {
+
     margin-top: 0.5rem;
     margin-bottom: 0;
     width: 220px;
     height: 31px;
-  }
-  #my-modal .modal-content .credit-row .visa-img{
-    
+}
+
+#my-modal .modal-content .credit-row .visa-img {
+
     margin-top: 1rem;
     margin-bottom: 1rem;
-  }
-  
-  
-  /* The Close Button */
-  #my-modal .close {
+}
+
+
+/* The Close Button */
+#my-modal .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  #my-modal .close:hover,
-  #my-modal .close:focus {
+}
+
+#my-modal .close:hover,
+#my-modal .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 /* /////////////////////Terms and Conditions Page///////////// */
 #landing-page.tsandcs-landing {
@@ -1061,6 +1111,7 @@ footer .copyright br{
     background-size: cover;
     background-position: center;
 }
+
 #landing-page.tsandcs-landing #banner {
     text-align: center;
 }
@@ -1070,25 +1121,239 @@ footer .copyright br{
     color: #fff;
     font-size: 2rem;
 }
-#tsandcs{
+
+#tsandcs {
     padding: 2rem 5rem;
 }
-#tsandcs h2{
+
+#tsandcs h2 {
     font-size: 2rem;
     color: goldenrod;
     padding-top: 1rem;
 }
-#tsandcs p{
+
+#tsandcs p {
     color: #000;
     padding: 1rem 0;
     text-align: justify;
 }
-#tsandcs ul{
+
+#tsandcs ul {
     padding: 1rem 3rem;
     text-align: justify;
 }
 
 
+/* /////////////////////////////CART PAGE///////////////////// */
+#cart{
+    /* overflow-x: auto; */
+    /* padding: 40px 10px; */
+    padding: 40px 80px;
+}
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: no-wrap;
+}
+
+#cart table tbody tr{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 5px; /* 5px rounded corners */
+    margin: 3px 0;
+    padding: 5px;
+}
+#cart table thead {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    margin: 15px 0;
+    padding: 7px;
+}
+#cart table tbody tr:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#cart table tbody tr td a i{
+    color: #186F65;
+}
+#cart table tbody tr td a i:hover{
+    color: red;
+}
+
+#cart table img{
+    width: 70px;
+}
+#cart table td:nth-child(1){
+    /* width: 100px; */
+    width: 70px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    /* width: 150px; */
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    /* width: 250px; */
+    width: 200px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6)
+{
+    /* width: 150px; */
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+/* #cart table thead{
+    border: 1px solid #ec544e;
+    border-left: none;
+    border-right: none;
+} */
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+#cart table tbody tr td{
+    padding-top: 15px;
+}
+#cart table tbody td{
+    font-size: 13px;
+}
+#cart table tbody tr td.table-total{
+    width: 100%;
+}
+
+#cart-add{
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+}
+
+#cart .table-total{
+    margin: 20px auto;
+    width: 50%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 20px;
+}
+
+
+
+#payments-section {
+    display: flex;
+    gap: 20px;
+    padding: 20px 80px;
+    
+}
+#payments-section #mpesa-card {
+    width: 45%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 25px;   
+}
+#payments-section #mpesa-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+#payments-section #mpesa-card h3{
+    padding: 15px;
+    text-align: center;
+    color: #00DFA2;
+}
+#payments-section #mpesa-card ul li{
+    padding: 10px;
+}
+#payments-section #mpesa-card ul li span{
+    color: #00DFA2;
+}
+#payments-section #mpesa-card div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#payments-section #mpesa-card div input{
+    height: 30px;
+    background-color: #aaa;
+    border: 1px solid black;
+    margin: 10px;
+}
+#payments-section #mpesa-card div button{
+    padding: 10px 25px;
+    background-color: #186F65;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+#payments-section #cards-card{
+    width: 45%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 25px;
+    color: #fff;
+    background-color: #B15EFF;
+
+}
+#payments-section #cards-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+#payments-section #cards-card h3 {
+    padding: 15px;
+    text-align: center;
+}
+
+#payments-section #cards-card .lab-inp{
+    margin: 10px 0;
+}
+#payments-section #cards-card .lab-inp label{
+    font-size: 15px;
+}
+#payments-section #cards-card .lab-inp input{
+    height: 30px;
+
+}
+#payments-section #cards-card .exp-cvv {
+    display: flex;
+    gap: 10px
+}
+#payments-section #cards-card hr {
+    margin: 20px 0;
+}
+#payments-section #cards-card .figures{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+#payments-section #cards-card .button-div{
+    background-color: #451952;
+    border-radius: 4px;
+    padding: 10px;
+}
+#payments-section #cards-card .button-div:hover{
+    cursor: pointer;
+}
+#payments-section #cards-card .button-div .row-align{
+    display: flex;
+    gap: 3px;
+}
 
 
 
@@ -1223,11 +1488,21 @@ footer .copyright br{
     #form-details form {
         width: 50%;
     }
+
+    /* My Tickets section */
+    #cart {
+        /* overflow-x: auto; */
+        /* padding: 40px 10px; */
+        padding: 40px 80px 40px 50px;
+        overflow-x: hidden;
+    }
+
+    #payments-section #cards-card .lab-inp input#cvv {
+        width: 70px;
+    }
+
+    
 }
-
-
-
-
 
 
 @media only screen and (max-width: 550px) {
@@ -1235,6 +1510,59 @@ footer .copyright br{
         padding: 7rem 5rem;
         display: block;
     }
+
+    /* Hamburger menu */
+    #landing-page #menu-section ul {
+        position: fixed;
+        /* left: -100%; */
+        top: -100%;
+        gap: 0;
+        flex-direction: column;
+        background-color: #000;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+
+    #landing-page #menu-section.active ul{
+        /* left: 0; */
+        top: 0;
+        background-color: #000;
+    }
+
+    #landing-page #menu-section a.icon {
+        display: block;
+        position: absolute;   
+
+    }
+
+    /* #landing-page #menu-section a.icon{
+        display: block;
+        top: 10px;
+        right: 10px;
+        position: absolute;
+    }
+
+    #landing-page #menu-section a.icon .menuIcon{
+        display: block;
+        
+
+    }
+
+    #landing-page #menu-section a.icon .closeIcon {
+        display: none;
+    } */
+
+    #landing-page #menu-section ul li {
+        margin: 16px 0;
+
+    }
+
+
+
+
 
     #landing-page #landing-section .logo-section img {
         height: 10rem;
@@ -1261,7 +1589,7 @@ footer .copyright br{
         margin-bottom: 30px;
     }
 
-    #newsletter .newstext{
+    #newsletter .newstext {
         margin-bottom: 0.5rem;
     }
 
@@ -1269,9 +1597,11 @@ footer .copyright br{
     #s-event-landing {
         flex-direction: column;
     }
+
     #s-event-landing .event-details {
         width: 100%;
     }
+
     #s-event-landing .poster-div {
         width: 100%;
     }
@@ -1279,9 +1609,34 @@ footer .copyright br{
     #my-modal .modal-content .price-box-row {
         flex-direction: column;
     }
+
     #my-modal .modal-content .price-box-row .price-box {
         margin-bottom: 0.75rem;
         width: 45%;
+    }
+
+    /* My Tickets Page */
+    #cart {
+        /* overflow-x: auto; */
+        /* padding: 40px 10px; */
+        padding: 40px 80px 10px 50px;
+    }
+    #cart .table-scroll {
+        overflow-x: auto;
+    }
+    
+
+    #payments-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+        padding: 20px 40px;
+    }
+    #payments-section #cards-card {
+        width: 70%;
+    }
+    #payments-section #mpesa-card {
+        width: 70%;
     }
 }
 
@@ -1295,9 +1650,15 @@ footer .copyright br{
         padding-top: 4rem;
     }
 
-    #landing-page #menu-section ul li {
+    /* #landing-page #menu-section ul li {
         margin: 0 1.5rem;
+    } */
+    /* For hamburger menu */
+    #landing-page #menu-section ul li {
+        margin: 16px 0;
+
     }
+
 
     #landing-page #menu-section ul li a {
         font-size: 1.5rem;
@@ -1376,7 +1737,7 @@ footer .copyright br{
     footer a {
         font-size: 17px;
         text-wrap: nowrap;
-        
+
     }
 
     footer .col {
@@ -1396,19 +1757,19 @@ footer .copyright br{
         padding-left: 5px;
     }
 
-    footer .al-left h4{
+    footer .al-left h4 {
         text-align: center;
     }
 
-    
 
-    footer .al-left p{
+
+    footer .al-left p {
         text-wrap: nowrap;
         text-align: center;
         font-size: 17px;
         margin: 0 0 8px 0;
     }
-    
+
 
     footer div.col.col3 {
         width: 40%;
@@ -1420,19 +1781,19 @@ footer .copyright br{
 
     footer .install img {
         margin: 10px 0 15px 0;
-     
+
     }
 
-    footer .copyright p{
+    footer .copyright p {
         font-size: 10px;
     }
-    
-    footer .copyright h4{
+
+    footer .copyright h4 {
         padding-top: 20px;
         padding-bottom: 0;
     }
 
-    footer .copyright br{
+    footer .copyright br {
         display: block;
     }
 
@@ -1470,8 +1831,9 @@ footer .copyright br{
     /* Modal */
     #my-modal .modal-content {
         overflow-x: hidden;
-        
+
     }
+
     #my-modal .modal-content .price-box-row .price-box {
         width: 80%;
     }
@@ -1483,10 +1845,10 @@ footer .copyright br{
     #my-modal .modal-content input.detect-change {
         width: 30%;
     }
-    
+
     #my-modal .modal-content hr {
         margin: 2rem;
-        
+
     }
 
     /* Single Event Page RESPONSIVE */
@@ -1500,5 +1862,19 @@ footer .copyright br{
         padding: 0.5rem 2rem;
     }
 
-}
+    /* My Tickets page */
+    #cart {
+        /* overflow-x: auto; */
+        /* padding: 40px 10px; */
+        padding: 10px 5px;
+    }
 
+    #payments-section #mpesa-card {
+        width: 90%;
+    }
+
+    #payments-section #cards-card {
+        width: 90%;
+    }
+
+}

@@ -23,7 +23,6 @@ const tip = document.querySelector(".tip input");
 //We had removed y scroll due to the splash screen
 document.addEventListener('DOMContentLoaded', (e) => {
   body.style.overflow = "auto";
-
 })
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -38,6 +37,34 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Hambuger menu
+const hamburger = document.querySelector("#landing-page #menu-section a.icon");
+const navMenu = document.querySelector("#landing-page #menu-section");
+const closeIcon = document.querySelector("#landing-page #menu-section .closeIcon");
+const menuIcon = document.querySelector("#landing-page #menu-section .menuIcon");
+
+
+
+hamburger.addEventListener("click", () => {
+  // hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+
+  // if(navMenu.classList.contains("active")){
+  //     closeIcon.style.display = "none";
+  //     menuIcon.style.display = "block";
+  // } else{
+  //     closeIcon.style.display = "block";
+  //     menuIcon.style.display = "none";
+  // }
+});
+
+document.querySelectorAll("#landing-page #menu-section ul li").forEach(n => n.addEventListener("click", () => {
+  // hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))
+
+
 
 
 //Events-Filter JS
